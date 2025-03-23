@@ -15,8 +15,27 @@ var elementRules = {
     "height": ["auto", "12.5%", "50%", "100px"]
 }
 
+const rules = {};
+
 function makeHandler(selector, rule, value) {
-    return _ => document.querySelectorAll(selector).forEach(el => el.style[rule] = value);
+    return _ => {
+        rules[selector] ||= {};
+        rules[selector][rule] = value;
+        document.querySelectorAll(selector).forEach(el => el.style[rule] = value);
+        outputCssRules(rules);
+    }
+}
+
+function outputCssRules(rules) {
+    var css = "";
+    for(var selector in rules) {
+        css += selector + " {\n";
+        for(var rule in rules[selector]) {
+            css += `  ${rule}: ${rules[selector][rule]};\n`;
+        }
+        css += "}\n\n";
+    }
+    document.getElementById('css-rules').value = css;
 }
 
 let form = document.querySelector("form");

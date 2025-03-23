@@ -1,9 +1,14 @@
 :root {
+    --font-family: "Trebuchet MS", "Arial", "Verdana", "Tahoma", sans-serif;
     --fg-color: #fff;
-    --bg-color: #903;
+    --bg-color: #036;
 }
 
 body {
+    & a {
+        color: var(--fg-color);
+    }
+    font-family: var(--font-family);
     color: var(--fg-color);
     background-color: var(--bg-color);
 }
