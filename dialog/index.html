@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <dialog id="customise-dialog">
+        this is a dialog!
+        <form method="dialog">
+            <label for="border-radius-input">Border Radius:</label>
+            <input type="range" id="border-radius-input" min="0" max="32" />
+            <hr />
+            <label for="font-size-input">Font Size:</label>
+            <input type="range" id="font-size-input" min="8" max="48" />
+            <hr />
+
+
+
+            <input type="text" value="hello" /> 
+            <button>Button</button>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </form>
+    </dialog>
+    <header>
+        The Customisable Web Page
+        <button id="customise-button">Customise It!</button>
+        <button id="another-button" onclick="console.log('Yay');">Another Button</button>
+    
+</header>
+<div class="highlight">
+    THIS IS A HIGHLIGHTED DIV! LOOK!
+</div>
+<article>
+    <h1>Elements</h1>
+    <button style="width: 100px; height: 100px;">HEY!</button>
+    <button style="width: 50px; height: 100px;">HEY!</button>
+<section>
+	<h2>Text &amp; Typography</h2>
+	<p>Sphinx of black quartz, judge my vow.</p>
+	<p>
+		This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+		This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+		This is <u>underlined</u> and this is<p> code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.
+	</p>
+	<h3>Lists</h3>
+	<ul>
+		<li>Guitar</li>
+		<li>Bass</li>
+		<li>Drums</li>
+		<li>
+			Horns
+			<ul>
+				<li>Trumpet</li>
+				<li>Trombone</li>
+				<li>Saxophone</li>
+			</ul>
+		</li>
+		<li>Keyboards</li>
+	</ul>
+	<h3>Ordered Lists</h3>
+	<ol>
+		<li>The Final Countdown</li>
+		<li>Rock the Night</li>
+		<li>Carrie</li>
+		<li>Danger on the Track</li>
+		<li>Ninja</li>
+		<li>Cherokee</li>
+		<li>Time Has Come</li>
+		<li>Heart of Stone</li>
+		<li>On the Loose</li>
+		<li>Love Chaser</li>
+	</ol>
+	<h3>Definition List</h3>
+	<dl>
+		<dt>Artist</dt>
+		<dd>A performer, band, or other musical act that's booking shows and selling tickets</dd>
+		<dt>Headliner</dt>
+		<dd>The performer or act on a concert bill that is promoted as the star attraction and typically performs last.</dd>
+		<dt>Support act</dt>
+		<dd>A smaller or less established act that plays a set before the headliner, to warm up the crowd.</dd>
+		<dt>Venue</dt>
+		<dd>A theatre, club, concert hall, bar, or other building or facility which hosts live musical performances</dd>
+	</dl>
+	<h3>Font Weights</h3>
+	<ol>
+		<li style="font-weight: 100;">font-weight: 100;</li>
+		<li style="font-weight: 200;">font-weight: 200;</li>
+		<li style="font-weight: 300;">font-weight: 300;</li>
+		<li style="font-weight: 400;">font-weight: 400;</li>
+		<li style="font-weight: 500;">font-weight: 500;</li>
+		<li style="font-weight: 700;">font-weight: 700;</li>
+		<li style="font-weight: 800;">font-weight: 800;</li>
+		<li style="font-weight: 900;">font-weight: 900;</li>
+	</ol>
+	<hr />
+	<h1>Heading Level 1</h1>
+	<h2>Heading Level 2</h2>
+	<h3>Heading Level 3</h3>
+	<h4>Heading Level 4</h4>
+	<h5>Heading Level 5</h5>
+	<h6>Heading Level 6</h6>
+	<hr />
+	<h4>Blockquote</h4>
+	<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+	<h4>Preformatted</h4>
+	<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+	print 'Iteration ' + i;
+	deck.shuffle();
+	i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+</section>
+<hr />
+<section>
+	<h2>Forms</h2>
+	<h3>Input Types</h3>
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a>
+	<hr />
+    <!--
+	<form action="#" method="post">
+		<div>
+			<div>
+				<label for="input-text">Name</label>
+				<input type="text" id="input-text" placeholder="what's your name?" />
+			</div>
+			<div>
+				<label for="color-input">Hair Colour</label>
+				<input type="color" id="hair-color-input" value="#ff3399" />
+			</div>
+			<div>
+				<label for="date-input">Date of Birth</label>
+				<input type="date" id="date-input" value="date" />
+			</div>
+			<div>
+				<label for="datetime-local-input">Audition Time</label>
+				<input type="datetime-local" id="datetime-local-input" value="datetime-local" />
+			</div>
+			<div>
+				<label for="email-input">Email Address</label>
+				<input type="email" id="email-input" value="email" />
+			</div>
+			<div>
+				<label for="file-input">Photograph</label>
+				<input type="file" id="file-input" value="file" />
+			</div>
+			<div>
+				<label for="number-input">Strings</label>
+				<input type="number" id="number-input" value="5" min="2" max="8" />
+			</div>
+			<div>
+				<label for="tel-input">Telephone</label>
+				<input type="tel" id="tel-input" value="tel" />
+			</div>
+			<div>
+				<label for="month-input">First concert?</label>
+				<input type="month" id="month-input" value="month" />
+			</div>
+			<div>
+				<label for="range-input">Volume</label>
+				<input type="range" id="range-input" value="range" min="2" max="20" />
+			</div>
+			<div>
+				<label for="password-input">Password</label>
+				<input type="password" id="password-input" value="password" />
+			</div>
+			<div>
+				<label for="search-input">search</label>
+				<input type="search" id="search-input" value="search" />
+			</div>
+			<div>
+				<label for="time-input">Show time</label>
+				<input type="time" id="time-input" value="time" />
+			</div>
+			<div>
+				<label for="url-input">Website</label>
+				<input type="url" id="url-input" value="url" />
+			</div>
+			<div>
+				<label for="week-input">Holiday Week</label>
+				<input type="week" id="week-input" value="week" />
+			</div>
+			<div>
+				<label>Instruments</label>
+			</div>
+			<div>
+				<label for="checkbox-input-guitar">
+					<input type="checkbox" id="checkbox-input-guitar" value="checkbox" />
+					Guitar
+				</label><br />
+				<label for="checkbox-input-bass">
+					<input type="checkbox" id="checkbox-input-bass" value="checkbox" />
+					Bass
+				</label><br />
+				<label for="checkbox-input-drums">
+					<input type="checkbox" id="checkbox-input-drums" value="checkbox" />
+					Drums
+				</label><br />
+			</div>
+			<div>
+				<label for="select-single">Instrument</label>
+			</div>
+			<div>
+				<select id="select-single">
+					<option>select...</option>
+					<option>Guitar</option>
+					<option>Bass</option>
+					<option>Drums</option>
+					<optgroup label="Horns">
+						<option>Trumpet</option>
+						<option>Trombone</option>
+						<option>Saxophone</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>
+				Radio Station
+			</div>
+			<div>
+				<label for="radio-input-jazz-fm">
+					<input type="radio" id="radio-input-jazz-fm" name="radio" value="jazz-fm" />
+					Jazz FM
+				</label><br />
+				<label for="radio-input-knac">
+					<input type="radio" id="radio-input-knac" name="radio" value="knac-pure-rock" />
+					KNAC Pure Rock 105.5
+				</label><br />
+				<label for="radio-input-bbc-r2">
+					<input type="radio" id="radio-input-bbc-r2" name="radio" value="bbc-radio-2" />
+					BBC Radio 2
+				</label><br />
+			</div>
+			<div>
+				<label for="select-multiple">Select (multiple options)</label>
+			</div>
+			<div>
+				<select id="select-multiple" multiple="multiple">
+					<option>select...</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+					<optgroup label="Special Options">
+						<option>Special Option A</option>
+						<option>Special Option B</option>
+						<option>Special Option C</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>
+				<label for="textarea-comments">Comments</label>
+			</div>
+			<div>
+				<textarea id="textarea-comments" name="comments"></textarea>
+			</div>
+		</div>
+	</form>
+    -->
+	<fieldset>
+		<legend>Music Genres</legend>
+		This is a set of checkboxes in fieldset element with a legend.
+		<br />
+			<label for="fieldset-checkbox-djent">
+				<input type="checkbox" name="fieldset-checkbox" id="fieldset-checkbox-djent" value="djent" /> Djent
+			</label>
+			<label for="fieldset-checkbox-mathcore">
+				<input type="checkbox" name="fieldset-checkbox" id="fieldset-checkbox-mathcore" value="mathcore" /> Mathcore
+			</label>
+			<label for="fieldset-checkbox-postrock">
+				<input type="checkbox" name="fieldset-checkbox" id="fieldset-checkbox-postrock" value="postrock" /> Post Rock
+			</label>
+			<label for="fieldset-checkbox-shoegaze">
+				<input type="checkbox" name="fieldset-checkbox" id="fieldset-checkbox-shoegaze" value="shoegaze" /> Shoegaze
+			</label>
+	</fieldset>
+</article>
+</body>
+</html>
+

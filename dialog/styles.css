@@ -1,0 +1,57 @@
+h1, p, a, ul, li, ol {
+    color: blue;
+}
+
+
+h1, h2, p, aside, address {
+    font-family: Consolas;
+}
+
+
+h1 {
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    color: blue;
+    margin: 8px;
+}
+:root {
+    --border-radius: 10px;
+    --font-size: 16px;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+button, input[type="submit"] {
+    border-radius: var(--border-radius);
+}
+
+dialog {
+    --font-size: 24px;
+    font-size: var(--font-size);
+}
+
+div.highlight {
+    background: linear-gradient(33deg, 
+    rgba(188, 185, 244, 0.8) 0%, 
+    rgba(121,9,112,0.8) 23%, 
+    rgba(180,156,63,0.8) 75%, 
+    rgba(0,212,255, 0.8) 100%
+);
+border-radius: var(--border-radius);
+border: 1px solid #000;
+}
+
+::backdrop {
+    background: rgb(2,0,36);
+    background: linear-gradient(33deg, 
+        rgba(188, 185, 244, 0.8) 0%, 
+        rgba(121,9,112,0.8) 23%, 
+        rgba(180,156,63,0.8) 75%, 
+        rgba(0,212,255, 0.8) 100%
+    );
+}
